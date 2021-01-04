@@ -120,5 +120,10 @@ a {
     font-weight: 600;
     font-size: larger;
     width: 100%;
-    text-align: center;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.lyrics-desc{
+  color: chocolate;
 }
