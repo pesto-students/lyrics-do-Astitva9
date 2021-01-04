@@ -7,7 +7,7 @@ const songResult = async (songLink) => {
   const theDiv = document.getElementById('song-results');
 
   theDiv.innerHTML = 'Searching.....';
-  const response = await fetch(`https://cors-anywhere.herokuapp.com/${songLink}`);
+  const response = await fetch(`${songLink}`);
   const result = await response.json();
 
   const songsResult = result.data;
