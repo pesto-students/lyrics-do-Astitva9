@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.search-form input[type=search] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.search-form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search-form button:hover {
+    background: #0b7dda;
+  }
+  
+  form.search-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.result-div{
+    padding: 100px;
+    background-color: aliceblue;
+    border: 1px solid #5b99d0;
+    margin-top: 23px;
+}
+
+.search-div {
+    padding: 170px;
+    background-image: url(https://source.unsplash.com/1600x400/?music,song);
+    padding-left: 170px;
+    height: auto;
+}
+
+ul {
+    text-align: left;
+    padding: 20px;
+    background-color: #4092da;
+    border-radius: 6px;
+}
+
+li .btn {
+    
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+li .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+a {
+    color: #4A4A4A;
+    border: 0; outline: 0;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px
+}
+.pagination a, .pagination strong {
+    background: #fff;
+    display: inline-block;
+    margin-right: 3px;
+    padding: 4px 12px;
+    text-decoration: none;
+	line-height: 1.5em;
+	
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.pagination a:hover {
+    background-color: #BEBEBE;
+    color: #fff;
+}
+.pagination a:active {
+	background: rgba(190, 190, 190, 0.75);
+}
+.pagination strong {
+    color: #fff;
+    background-color: #BEBEBE;
+}
+
+.lyrics-div {
+    background-color: antiquewhite;
+    margin-top: 24px;
+    border: 1px solid #e49934;
+    padding: 70px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: larger;
+    width: 100%;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+.lyrics-desc{
+  color: chocolate;
+}
