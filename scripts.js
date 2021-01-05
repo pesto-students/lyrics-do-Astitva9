@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-
+const corsLink = ' https://cors-anywhere.herokuapp.com/';
 const songSuggestionAPI = 'https://api.lyrics.ovh/suggest/';
 const getLyricsAPI = 'https://api.lyrics.ovh/v1/';
 const songContent = document.getElementById('song-results');
@@ -9,7 +9,7 @@ const lyricsElements = document.querySelectorAll('.lyrics-div');
 // function solely responsible to call the provided API
 const callAPI = async (APIName) => {
   try {
-    const response = await fetch(`${APIName}`);
+    const response = await fetch(`${corsLink + APIName}`);
     const result = await response.json();
     return result;
   } catch (error) {
